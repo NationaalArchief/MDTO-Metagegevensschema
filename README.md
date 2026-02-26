@@ -33,13 +33,8 @@ Het document ondersteunt zowel implementatie als beleidsmatige toepassing van he
 
 ## Doe mee
 
-De ontwikkeling van MDTO is een open proces.
+De ontwikkeling van MDTO is een open proces. Iedereen kan bijdragen door een issue in te dienen om een wijzigingsverzoek, vraag of verbetering voor te stellen, of door een pull request in te dienen met een concrete aanpassing. Na beoordeling kan het Nationaal Archief voorgestelde wijzigingen overnemen in het metagegevenschema.
 
-Iedereen kan bijdragen door:
+## Contact
 
-- Het indienen van een **issue** om een wijzigingsverzoek, vraag of verbetering voor te stellen  
-- Het indienen van een **pull request** met een concrete aanpassing  
-
-Na beoordeling kan het Nationaal Archief voorgestelde wijzigingen overnemen in het model.
-
-Samen werken we aan een robuust en toekomstbestendig metagegevensmodel.
+Voor vragen of nadere toelichting kun je contact opnemen met het Nationaal Archief via **info@nationaalarchief.nl**.
