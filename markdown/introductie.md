@@ -163,7 +163,7 @@ De volgende datatypen worden gebruikt in de attribuutspecificaties van MDTO.
 
 Alle  datatypen zijn ingebouwde (built-in) datatypen gedefinieerd in XML Schema.
 
-| naam       | toelichting                                                                                                                                                                                                                                                                                                     |
+| Onderdelen | Beschrijving                                                                                                                                                                                                                                                                                                    |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | date       | datum uitgedrukt als yyyy-mm-dd conform iso 8601. voorbeeld: 1976-06-13 (13 juni 1976)                                                                                                                                                                                                                          |
 | gYear      | periode van één kalenderjaar conform iso 8601. voorbeeld: 1993                                                                                                                                                                                                                                                  |
