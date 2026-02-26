@@ -2,7 +2,7 @@
 
 ## Wat is MDTO?
 
-Het MDTO (Metagegevensmodel Duurzaam Toegankelijke Overheidsinformatie) is een metagegevensmodel dat richtlijnen en structuur biedt voor het vastleggen van metagegevens bij overheidsinformatie.  
+Het MDTO (Metagegevens voor Duurzaam Toegankelijke Overheidsinformatie) is een metagegevensmodel dat richtlijnen en structuur biedt voor het vastleggen van metagegevens bij overheidsinformatie.  
 Het model ondersteunt duurzame toegankelijkheid, uitwisselbaarheid en beheer van informatie over langere tijd.
 
 MDTO beschrijft onder andere:
