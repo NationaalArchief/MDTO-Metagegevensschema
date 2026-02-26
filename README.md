@@ -1,4 +1,4 @@
-# MDTO – Metagegevensmodel Duurzaam Toegankelijke Overheidsinformatie
+# MDTO – Metagegevens voor Duurzaam Toegankelijke Overheidsinformatie
 
 ## Wat is MDTO?
 
