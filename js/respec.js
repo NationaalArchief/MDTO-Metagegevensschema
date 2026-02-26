@@ -293,11 +293,11 @@ p:is(.respec-hint,.respec-occurrences){display:block;margin-top:.5em}
     const t = []; if (e.github) {
       const { repoURL: n, issuesURL: r, newIssuesURL: s, pullsURL: o, fullName: i } = e.github; t.push(kn`<dd>
         <a href="${n}">GitHub ${i}</a><br>
-        <a href="${o}">pull requests</a><br>
+        <a href="${o}">Pull requests</a><br>
         <a href="${s}">Dien een melding in </a><br>
-        <a href="${r}">open issues</a><br>
-        <a href="">Revisiehistory</a></br>
-        <a href="">Kennis producten</a><br>     
+        <a href="${r}">Open issues</a><br>
+        <a href="https://github.com/NationaalArchief/MDTO/commits/master/">Revisiehistorie</a></br>
+        <a href="https://www.nationaalarchief.nl/archiveren/kennisbank/catalogus-kennisproducten-0">Kennis producten</a><br>     
         <a href="https://www.nationaalarchief.nl/beleven/contactformulier-nationaal-archief">Melding aan het Nationaal Archief</a>
       </dd>`)
     } if (e.wgPublicList) {
