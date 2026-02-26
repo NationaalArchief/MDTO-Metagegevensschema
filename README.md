@@ -1,39 +1,45 @@
-# 📘 MDTO – Metadata voor Duurzaam Toegankelijke Overheidsinformatie
+# MDTO – Metagegevensmodel Duurzaam Toegankelijke Overheidsinformatie
 
-Het **MDTO (Metadata voor Duurzaam Toegankelijke Overheidsinformatie)** is een XML-schema ontwikkeld door het [Nationaal Archief](https://www.nationaalarchief.nl/archiveren/mdto) om de duurzame toegankelijkheid van digitale overheidsinformatie te ondersteunen.  
-Het schema beschrijft de structuur en betekenis van metadata die nodig zijn om informatieobjecten op een gestandaardiseerde manier te registreren, beheren en raadplegen.
+## Wat is MDTO?
 
----
+Het MDTO (Metagegevensmodel Duurzaam Toegankelijke Overheidsinformatie) is een metagegevensmodel dat richtlijnen en structuur biedt voor het vastleggen van metagegevens bij overheidsinformatie.  
+Het model ondersteunt duurzame toegankelijkheid, uitwisselbaarheid en beheer van informatie over langere tijd.
 
-## 🧩 Doel van het schema
+MDTO beschrijft onder andere:
 
-Het MDTO-schema heeft als doel om:
-- de **uitwisselbaarheid** van metadata tussen organisaties te verbeteren;  
-- de **duurzame toegankelijkheid** van digitale informatieobjecten te waarborgen;  
-- een **eenduidige structuur** te bieden voor de registratie van informatieobjecten, bestanden en gerelateerde gegevens.
+- **Klassen** – de verschillende entiteiten binnen het model  
+- **Attributen bij klassen** – eigenschappen die nadere informatie vastleggen  
+- **Gegevensgroepen** – logische groeperingen van samenhangende gegevens  
+- **Begrippenlijsten** – gestandaardiseerde terminologie ter ondersteuning van eenduidig gebruik  
 
----
-
-## 📄 Inhoud van deze repository
-
-| Bestand / map | Beschrijving |
-|----------------|--------------|
-| `/schema/` | Bevat de XSD-bestanden van de huidige versie van het MDTO-schema. |
-| `/examples/` | Voorbeelden van XML-bestanden die voldoen aan het MDTO-schema. |
-| `README.md` | Deze documentatie. |
-| `CHANGELOG.md` | Overzicht van wijzigingen per schema-versie. |
+Het model helpt organisaties om metagegevens op een consistente en toekomstbestendige manier vast te leggen.
 
 ---
 
-## 🏷️ Versiebeheer
+## Doelgroep
 
-De changelog met alle wijzigingen tussen schema-versies wordt bijgehouden in [`CHANGELOG.md`](./CHANGELOG.md).  
-De inline changelog die eerder in het XML-schema stond, is verwijderd en wordt voortaan beheerd via deze GitHub-omgeving.
+Dit technisch document is bedoeld voor:
+
+- Informatiearchitecten  
+- Functioneel beheerders  
+- Ontwikkelaars  
+- Dataspecialisten  
+- Leveranciers van informatiesystemen  
+- Adviseurs informatiehuishouding  
+
+Het document ondersteunt zowel implementatie als beleidsmatige toepassing van het metagegevensmodel.
 
 ---
 
-## ⚙️ Gebruik
+## Doe mee
 
-1. **Valideer XML-bestanden** tegen het schema:  
-   ```bash
-   xmllint --noout --schema mdto.xsd voorbeeld.xml
+De ontwikkeling van MDTO is een open proces.
+
+Iedereen kan bijdragen door:
+
+- Het indienen van een **issue** om een wijzigingsverzoek, vraag of verbetering voor te stellen  
+- Het indienen van een **pull request** met een concrete aanpassing  
+
+Na beoordeling kan het Nationaal Archief voorgestelde wijzigingen overnemen in het model.
+
+Samen werken we aan een robuust en toekomstbestendig metagegevensmodel.
