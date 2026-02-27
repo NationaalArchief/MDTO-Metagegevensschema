@@ -15,11 +15,11 @@ Een metagegevensschema kan voor verschillende doeleinden gebruikt worden, zoals:
 ### Soorten objecten
 MDTO maakt onderscheid tussen verschillende soorten objecten waaraan metagegevens verbonden zijn:
 
-- Informatieobject: Een op zichzelf staand geheel van gegevens met een eigen identiteit. Zoals een tekstdocument of een foto. Zie de definitie van Informatieobject voor een nadere toelichting.
-- Bestand: Een geordende verzameling van gegevens in elektronische vorm, die door een elektronisch apparaat onder één naam kan worden behandeld en aangesproken. Zoals een Word-bestand of MPEG-bestand. Zie ook de definitie van Bestand.
-- Bedrijfsactiviteit: een taak die wordt uitgevoerd door een organisatie (Bron: NEN-ISO 30300:2020). Zie ook de specificatie van Bedrijfsactiviteit.
-- Actor: Persoon, groep, organisatie of functionaris. Zie ook de specificatie van Actor.
-- Locatie: Fysieke plaats in de ruimte. Zie ook de specificatie van Locatie.
+- [Informatieobject](#informatieobject): Een op zichzelf staand geheel van gegevens met een eigen identiteit. Zoals een tekstdocument of een foto. Zie de definitie van Informatieobject voor een nadere toelichting.
+- [Bestand](#bestand): Een geordende verzameling van gegevens in elektronische vorm, die door een elektronisch apparaat onder één naam kan worden behandeld en aangesproken. Zoals een Word-bestand of MPEG-bestand. Zie ook de definitie van Bestand.
+- [Bedrijfsactiviteit](#bedrijfsactiviteit): een taak die wordt uitgevoerd door een organisatie (Bron: NEN-ISO 30300:2020). Zie ook de specificatie van Bedrijfsactiviteit.
+- [Actor](#actor): Persoon, groep, organisatie of functionaris. Zie ook de specificatie van Actor.
+- [Locatie](#locatie): Fysieke plaats in de ruimte. Zie ook de specificatie van Locatie.
 
 In het onderstaande diagram zijn de in MDTO gespecificeerde relaties tussen de verschillende objecten weergegeven:
 
@@ -174,3 +174,4 @@ Alle  datatypen zijn ingebouwde (built-in) datatypen gedefinieerd in XML Schema.
 | language   | identificatiekenmerk van een natuurlijke taal conform rfc 3066. voorbeeld: nl (nederland)                                                                                                                                                                                                                       |
 | string     | een reeks tekens of karakters. een lege string wordt opgevat als een ontbrekende waarde. in mdto zijn lege strings daarom niet toegestaan. voorbeeld: “abc 123”                                                                                                                                                 |
 | integer    | geheel getal, lengte is minimaal 1 en maximale lengte is onbepaald, zonder voorloopnullen. subtype van iso number (iso 11404). voorbeeld: 23042                                                                                                                                                                 |
+

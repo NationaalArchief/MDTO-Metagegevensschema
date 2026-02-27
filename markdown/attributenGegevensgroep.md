@@ -1,6 +1,12 @@
-# Attributen bij Gegevensgroep
+# Gegevensgroepen
 
-## identificatieKenmerk
+## identificatieGegevens
+Deze gegevensgroep bestaat uit de volgende attributen:
+| Gegevensgroep         | Attributen                                                                                                      |
+| --------------------- | --------------------------------------------------------------------------------------------------------------- |
+| identificatieGegevens | <ul><li>[identificatieKenmerk](#identificatiekenmerk)</li><li>[identificatieBron](#identificatiebron)</li></ul> |
+
+### identificatieKenmerk
 | Veld        | Waarde                                                                                                                                                                                                                                                      |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Kenmerk                                                                                                                                                                                                                                                     |
@@ -13,7 +19,7 @@
 | Toelichting | Een uniek kenmerk is nodig om objecten van elkaar te kunnen onderscheiden. Het is mogelijk dat er in de loop van de tijd meerdere kenmerken aan objecten worden toegekend, in dat geval is het van belang dat eerder toegekende kenmerken behouden blijven. |
 | Voorbeelden | <ul><li>“123e4567-e89b-12d3-a456-426614174000” (UUID)</li><li>“9789047706205” (ISBN)</li><li>“0518100000320637” (BAG ID)</li><li>“https://hdl.handle.net/10648/71109a75-6cd9-4409-ac14-dd842b5d3ac7” (HTTP-URI)</li></ul>                                   |
 
-## identificatieBron
+### identificatieBron
 | Veld        | Waarde                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Bron                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -26,7 +32,13 @@
 | Toelichting | Een identificatiekenmerk kan worden toegekend met behulp van een bepaalde systematiek, binnen een bepaalde applicatie, door een bepaalde organisatie of een individu.<br><br>Binnen een organisatie is de uniciteit van een identificatiekenmerk veelal nog wel gewaarborgd, maar zodra het daarbuiten wordt gepubliceerd wordt dat lastiger. Daarom wordt ook de bron vermeld waarbinnen het identificatiekenmerk uniek moet zijn. Organisaties kunnen ervoor kiezen om een methode te gebruiken waarmee unieke identificatiekenmerken gegenereerd kunnen worden, zoals UUIDs. |
 | Voorbeelden | <ul><li>“ISBN”</li><li>“Basisregistratie Adressen en Gebouwen (BAG)”</li><li>“Proza”</li><li>“Handle”</li><li>“Actorenregister”</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
-## verwijzingNaam
+## verwijzingsGegevens
+Deze gegevensgroep bestaat uit de volgende attributen:
+| Gegevensgroep       | Attributen                                                                                                      |
+| ------------------- | --------------------------------------------------------------------------------------------------------------- |
+| verwijzingsGegevens | <ul><li>[verwijzingNaam](#verwijzingnaam)</li><li>[verwijzingIdentificatie](#verwijzingidentificatie)</li></ul> |
+
+### verwijzingNaam
 | Veld        | Waarde                                                                   |
 | ----------- | ------------------------------------------------------------------------ |
 | Label       | Naam                                                                     |
@@ -39,7 +51,7 @@
 | Toelichting | Zie het attribuut [naam](#naam) bij [Object](#object).                   |
 | Voorbeelden | <ul><li>Zie het attribuut [naam](#naam) bij [Object](#object).</li></ul> |
 
-## verwijzingIdentificatie
+### verwijzingIdentificatie
 | Veld        | Waarde                                                                                     |
 | ----------- | ------------------------------------------------------------------------------------------ |
 | Label       | Identificatie                                                                              |
@@ -52,7 +64,13 @@
 | Toelichting | Zie het attribuut [identificatie](#identificatie) bij [Object](#object).                   |
 | Voorbeelden | <ul><li>Zie het attribuut [identificatie](#identificatie) bij [Object](#object).</li></ul> |
 
-## begripLabel
+## begripGegevens
+Deze gegevensgroep bestaat uit de volgende attributen:
+| Gegevensgroep  | Attributen                                                                                                                            |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| begripGegevens | <ul><li>[begripLabel](#begriplabel)</li><li>[begripCode](#begripcode)</li><li>[begripBegrippenlijst](#begripbegrippenlijst)</li></ul> |
+
+### begripLabel
 | Veld        | Waarde                                                                                                                                                                                                                                                                                                                                                                                                         |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Label                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -65,7 +83,7 @@
 | Toelichting | Het label is de tekstweergave van het begrip en is het meest geschikt voor menselijke lezing. Het label is één van de manieren om een begrip aan te duiden, naast de code. Indien er meerdere labels zijn vastgelegd, wordt hier het voorkeurslabel vermeld.<br><br>Het verschil tussen label en code is niet altijd evident. Label is bedoeld om een duidelijke beschrijving te geven voor menselijke lezing. |
 | Voorbeelden | <ul><li>“Creatie” (mogelijk label van eventType)</li><li>“Heeft formaat” (mogelijk label van gerelateerdInformatieobjectTypeRelatie)</li></ul>                                                                                                                                                                                                                                                                 |
 
-## begripCode
+### begripCode
 | Veld        | Waarde                                                                                                                                                                                                                                                               |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Code                                                                                                                                                                                                                                                                 |
@@ -78,7 +96,7 @@
 | Toelichting | In sommige begrippenlijsten hebben de begrippen een code om ze aan te duiden. De code is dan één van de manieren om een begrip aan te duiden, naast het [label](#begriplabel).                                                                                       |
 | Voorbeelden | <ul><li>“BBN1” (code in de Baseline Informatiebeveiliging Overheid voor “Basis beveiligingsniveau 1”)</li><li>“B.2” (code uit het eigen ordeningsplan van het Nationaalarchief voor “Geven van voorlichting en het verstrekken van informatie aan derden”)</li></ul> |
 
-## begripBegrippenlijst
+### begripBegrippenlijst
 | Veld        | Waarde                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Begrippenlijst                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -92,7 +110,13 @@
 | Toelichting | MDTO maakt gebruik van begrippenlijsten bij attributen waarvan de waarde uit een lijst gekozen moet worden. Een begrippenlijst wordt ook wel aangeduid als een gecontroleerde woordenlijst of vocabulaire.<br><br>Een begrippenlijst kan gebruikt worden voor validatie, betekenisopzoeking, keuzelijsten en zoekfunctionaliteit.<br><br>Bij voorkeur is de begrippenlijst zelf ook een open standaard. In principe wordt een begrippenlijst vastgelegd in SKOS (Simple Knowledge Organization System). |
 | Voorbeelden | <ul><li>Een ordeningsplan waarbij elke categorie een begrip is.</li><li>Een zaaktypecatalogus waarbij elk zaaktype een begrip is.</li><li>Een selectielijst waarbij elke benoemde categorie informatieobjecten een begrip is.</li><li>NEN 2084:2015: Taxonomie van documenttypen.</li></ul>                                                                                                                                                                                                             |
 
-## dekkingInTijdType
+## dekkingInTijdGegevens
+Deze gegevensgroep bestaat uit de volgende attributen:
+| Gegevensgroep         | Attributen                                                                                                                                                                      |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| dekkingInTijdGegevens | <ul><li>[dekkingInTijdType](#dekkingintijdtype)</li><li>[dekkingInTijdBegindatum](#dekkingintijdbegindatum)</li><li>[dekkingInTijdEinddatum](#dekkingintijdeinddatum)</li></ul> |
+
+### dekkingInTijdType
 | Veld           | Waarde                                                                                                      |
 | -------------- | ----------------------------------------------------------------------------------------------------------- |
 | Label          | Type                                                                                                        |
@@ -106,7 +130,7 @@
 | Toelichting    | Geen                                                                                                        |
 | Voorbeelden    | <ul><li>Geldend</li><li>Datum vergadering</li><li>Looptijd</li><li>Periode van behandeling</li></ul>        |
 
-## dekkingInTijdBegindatum
+### dekkingInTijdBegindatum
 | Veld        | Waarde                                                                                                         |
 | ----------- | -------------------------------------------------------------------------------------------------------------- |
 | Label       | Begindatum                                                                                                     |
@@ -119,7 +143,7 @@
 | Toelichting | Indien de exacte datum niet bekend is, kan volstaan worden met alleen het jaar en de maand of alleen het jaar. |
 | Voorbeelden | <ul><li>“1985-04-20”</li><li>“1985-04”</li><li>“1985”</li></ul>                                                |
 
-## dekkingInTijdEinddatum
+### dekkingInTijdEinddatum
 | Veld        | Waarde                                                                                                                                                                                                       |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Label       | Einddatum                                                                                                                                                                                                    |
@@ -132,7 +156,14 @@
 | Toelichting | Indien de exacte datum niet bekend is, kan volstaan worden met het jaar en de maand of alleen het jaar.                                                                                                      |
 | Voorbeelden | <ul><li>“1988-05-25”</li><li>“1988-05”</li><li>“1988”</li></ul>                                                                                                                                              |
 
-## eventType
+## eventGegevens
+Deze gegevensgroep bestaat uit de volgende attributen:
+| Gegevensgroep | Attributen                                                                                                                                                                            |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| eventGegevens | <ul><li>[eventType](#eventtype)</li><li>[eventTijd](#eventtijd)</li><li>[eventVerantwoordelijkActor](#eventverantwoordelijkactor)</li><li>[eventResultaat](#eventresultaat)</li></ul> |
+
+
+### eventType
 | Veld           | Waarde                                                                                                                                                                                                                                                                                                                        |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label          | Type                                                                                                                                                                                                                                                                                                                          |
@@ -146,7 +177,7 @@
 | Toelichting    | Met dit attribuut wordt onderscheid gemaakt tussen verschillende soorten events, zodat duidelijk is wat de betekenis van het event is.<br><br>Het eventType kan gebruikt worden om automatische acties aan te verbinden. Zo kan bijvoorbeeld de bewaartermijn gestart worden op het moment van het afsluiten van een dossier. |
 | Voorbeelden    | <ul><li>Ontvangst</li><li>Wijziging</li><li>Zie ook de MDTO begrippenlijst EventTypeLijst.</li></ul>                                                                                                                                                                                                                          |
 
-## eventTijd
+### eventTijd
 | Veld        | Waarde                                                                                                                                                |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Tijd                                                                                                                                                  |
@@ -159,7 +190,7 @@
 | Toelichting | Wanneer het exacte tijdstip niet bekend of niet relevant is, kan volstaan worden met het vermelden van de datum of een deel daarvan (zoals een jaar). |
 | Voorbeelden | <ul><li>“1985-04-22T23:20:30”</li></ul>                                                                                                               |
 
-## eventVerantwoordelijkActor
+### eventVerantwoordelijkActor
 | Veld        | Waarde                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Label       | Verantwoordelijke actor                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -172,7 +203,7 @@
 | Toelichting | Het gaat om de functionaris of organisatie die verantwoordelijk is voor het event, niet zozeer om personen.<br><br>Merk op dat bij het vastleggen en verstrekken van persoonsgegevens over een actor beperkingen van toepassing zijn op grond van de Algemene verordening gegevensbescherming (AVG). MDTO doet geen uitspraken over welke persoonsgegevens mogen worden vastgelegd en beschikbaar gesteld op grond van de AVG. |
 | Voorbeelden | <ul><li>naam: “Directeur Bestuursondersteuning en Advies” (functionaris)</li><li>naam: “Afdeling inkoop” (organisatieonderdeel)</li></ul>                                                                                                                                                                                                                                                                                      |
 
-## eventResultaat
+### eventResultaat
 | Veld        | Waarde                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Resultaat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -185,7 +216,14 @@
 | Toelichting | Voor bepaalde events kan het resultaat relevant zijn voor de betrouwbaarheid of interpreteerbaarheid van het informatieobject. Met name als het event een proces omvat waarin controles worden uitgevoerd, zoals bij migratie of conversie.                                                                                                                                                                                                                                                                                                    |
 | Voorbeelden | <ul><li>“Handtekening valide” (bij het event ‘validatie handtekening’ is de digitale handtekening gecontroleerd)</li><li>““Onvolledig. Van de 34 objecten in het dossier ontbreken 5 objecten”  (na het event uitwisseling van zaakdossier X tussen een gemeente en  een omgevingsdienst is gebleken dat deze onvolledig is.)</li><li>“Kleur ontbreekt” (na het event digitalisering van de bouwdossiers van een gemeente  is gebleken dat scans zwart-wit zijn, waardoor kaarten en tabellen niet goed interpreteerbaar meer zijn.)</li></ul> |
 
-## gerelateerdInformatieobjectVerwijzing
+## gerelateerdInformatieobjectGegevens
+Deze gegevensgroep bestaat uit de volgende attributen:
+| Gegevensgroep                       | Attributen                                                                                                                                                                                  |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| gerelateerdInformatieobjectGegevens | <ul><li>[gerelateerdInformatieobjectVerwijzing](#gerelateerdinformatieobjectverwijzing)</li><li>[gerelateerdInformatieobjectTypeRelatie](#gerelateerdinformatieobjecttyperelatie)</li></ul> |
+
+
+### gerelateerdInformatieobjectVerwijzing
 | Veld        | Waarde                                                                                            |
 | ----------- | ------------------------------------------------------------------------------------------------- |
 | Label       | Verwijzing                                                                                        |
@@ -198,7 +236,7 @@
 | Toelichting | Geen                                                                                              |
 | Voorbeelden | <ul><li>Zie de voorbeelden bij de attributen die onderdeel zijn van deze gegevensgroep.</li></ul> |
 
-## gerelateerdInformatieobjectTypeRelatie
+### gerelateerdInformatieobjectTypeRelatie
 | Veld           | Waarde                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Label          | Type relatie                                                                                                              |
@@ -212,7 +250,14 @@
 | Toelichting    | Met dit attribuut kunnen verschillende typen relaties worden vastgelegd, zoals een volgtijdelijke of functionele relatie. |
 | Voorbeelden    | <ul><li>Zie begrippenlijst Relatietypen (informatieobject)</li></ul>                                                      |
 
-## betrokkeneTypeRelatie
+## betrokkeneGegevens
+Deze gegevensgroep bestaat uit de volgende attributen:
+| Gegevensgroep      | Attributen                                                                                                    |
+| ------------------ | ------------------------------------------------------------------------------------------------------------- |
+| betrokkeneGegevens | <ul><li>[betrokkeneTypeRelatie](#betrokkenetyperelatie)</li><li>[betrokkeneActor](#betrokkeneactor)</li></ul> |
+
+
+### betrokkeneTypeRelatie
 | Veld           | Waarde                                                                                                                                                                                                                                                                                                                                              |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label          | Type relatie                                                                                                                                                                                                                                                                                                                                        |
@@ -226,7 +271,7 @@
 | Toelichting    | Een persoon of organisatie kan verschillende belangen hebben, bijvoorbeeld als onderwerp van een dossier of als aanvrager van een vergunning.<br><br>Ook kunnen belangen direct of indirect geraakt worden, zoals omwonenden bij een vergunningaanvraag.                                                                                            |
 | Voorbeelden    | <ul><li>De auteur van een rapport</li><li>Een fotograaf die een foto heeft gemaakt</li><li>Degene die geportretteerd is op de foto</li><li>De maker van een compositie</li><li>Een softwareontwikkelaar die een applicatie heeft ontwikkeld</li><li>Zie ook de MDTO begrippenlijst [Relatietypen](#relatietypen-betrokkene)  (betrokkene)</li></ul> |
 
-## betrokkeneActor
+### betrokkeneActor
 | Veld        | Waarde                                                                                                                                 |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Actor                                                                                                                                  |
@@ -239,7 +284,14 @@
 | Toelichting | Het betreft hier de identificatie en de naam van de betrokkene, zoals gedefinieerd bij de klasse [Actor](#actor).                      |
 | Voorbeelden | <ul><li>identificatie:<br>kenmerk: “24212428”<br>bron: “Handelsregister Kamer van Koophandel (KVK)”<br>naam: “Café t Hoekje”</li></ul> |
 
-## beperkingGebruikType
+## beperkingGebruikGegevens
+Deze gegevensgroep bestaat uit de volgende attributen:
+| Gegevensgroep            | Attributen                                                                                                                                                                                                                                                                          |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| beperkingGebruikGegevens | <ul><li>[beperkingGebruikType](#beperkinggebruiktype)</li><li>[beperkingGebruikNadereBeschrijving](#beperkinggebruiknaderebeschrijving)</li><li>[beperkingGebruikDocumentatie](#beperkinggebruikdocumentatie)</li><li>[beperkingGebruikTermijn](#beperkinggebruiktermijn)</li></ul> |
+
+
+### beperkingGebruikType
 | Veld           | Waarde                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label          | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -253,7 +305,7 @@
 | Toelichting    | Dit attribuut is bedoeld om zo eenduidig mogelijk vast te leggen wat de aard van een beperking is. Op basis hiervan kunnen beleid voor toegang en gebruik worden gedefinieerd. Mogelijk kunnen hier  automatische acties aan verbonden worden. Zoals het beperken van de toegang tot bepaalde gebruikersgroepen. Of aan de gebruiker een akkoord op gebruiksvoorwaarden vragen voordat toegang verleend wordt. MDTO legt niet vast welk beleid en automatische acties aan een bepaald type beperking verbonden zijn. Dat is aan de beheerder om te bepalen.<br><br>Als onbekend is of er een beperking is of wat de aard van de beperking is, dan wordt het type ‘Nader te bepalen’ gebruikt (zie ook de toelichting bij [beperkingGebruik](#beperkinggebruik)).<br><br>Als de beperking wel bekend is maar er is daarvoor geen type gedefinieerd, dan wordt het type ‘Overig’ gebruikt. In dat geval moet de aard van de beperking volledig in [beperkingGebruikNadereBeschrijving](#beperkinggebruiknaderebeschrijving) beschreven worden. |
 | Voorbeelden    | <ul><li>label: “Beperkt openbaar”<br>begrippenlijst: naam: “Beperkingen Archiefwet 1995” (titel van de begrippenlijst met alle beperkingen uit de Archiefwet. Met daarin bij dit label verwijzing naar Artikel 15 Archiefwet 1995, eerste lid, onder a).</li><li>label: “Openbaar”<br>begrippenlijst: naam: “Beperkingen Archiefwet 1995”</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
-## beperkingGebruikNadereBeschrijving
+### beperkingGebruikNadereBeschrijving
 | Veld        | Waarde                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Nadere beschrijving                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -266,7 +318,7 @@
 | Toelichting | Het is niet mogelijk om elk type beperking en de nuances daarop vast te leggen in [beperkingGebruikType](#beperkinggebruiktype). In dat geval wordt de beperking nader beschreven in [beperkingGebruikNadereBeschrijving](#beperkinggebruiknaderebeschrijving).<br><br>Als dit attribuut een waarde heeft, dan is volledige automatische afhandeling van de beperking niet mogelijk. Vul dit attribuut daarom alleen in als [beperkingGebruikType](#beperkinggebruiktype) onvoldoende informatie geeft. |
 | Voorbeelden | <ul><li>Voorwaarden waaronder bepaald gebruik wel is toegestaan</li><li>Specifieke beperking die op een klein aantal informatieobjecten van toepassing is</li></ul>                                                                                                                                                                                                                                                                                                                                     |
 
-## beperkingGebruikDocumentatie
+### beperkingGebruikDocumentatie
 | Veld        | Waarde                                                                                                                                             |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Documentatie                                                                                                                                       |
@@ -279,7 +331,7 @@
 | Toelichting | Soms zijn afspraken over een beperking in een afzonderlijk tekstdocument opgenomen. Dan verwijst dit attribuut daar naar.                          |
 | Voorbeelden | <ul><li>Overeenkomst met rechthebbende</li><li>Tekstdocument met afspraken over toegang</li><li>Afspraken bij overdracht van een archief</li></ul> |
 
-## beperkingGebruikTermijn
+### beperkingGebruikTermijn
 | Veld        | Waarde                                                                                                                                                                                                                   |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Label       | Termijn                                                                                                                                                                                                                  |
@@ -292,7 +344,14 @@
 | Toelichting | Een beperking kan tijdelijk zijn. Dit attribuut geeft aan wanneer de beperking eindigt.<br><br>Als geen waarde is opgenomen, blijft de beperking voor altijd van toepassing of tot vernietiging.                         |
 | Voorbeelden | <ul><li>Trigger start looptijd: “Overlijden auteur”</li><li>Termijn looptijd: “P70Y”</li></ul> Zie verder de voorbeelden bij de attributen die onderdeel zijn van de gegevensgroep [termijnGegevens](#termijngegevens) . |
 
-## termijnTriggerStartLooptijd
+
+## termijnGegevens
+Deze gegevensgroep bestaat uit de volgende attributen:
+| Gegevensgroep   | Attributen                                                                                                                                                                                                                              |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| termijnGegevens | <ul><li>[termijnTriggerStartLooptijd](#termijntriggerstartlooptijd)</li><li>[termijnStartdatumLooptijd](#termijnstartdatumlooptijd)</li><li>[termijnLooptijd](#termijnlooptijd)</li><li>[termijnEinddatum](#termijneinddatum)</li></ul> |
+
+### termijnTriggerStartLooptijd
 | Veld           | Waarde                                                                                                                                                                                                                                                                     |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label          | Trigger start looptijd                                                                                                                                                                                                                                                     |
@@ -306,7 +365,7 @@
 | Toelichting    | Soms is de einddatum afhankelijk van een gebeurtenis. Vanaf die gebeurtenis start een bepaalde periode voordat het einde van de termijn is bereikt.<br><br>Indien nodig kan aanvullende context vastgelegd worden bij [Betrokkene](#betrokkene) of in Nadere beschrijving. |
 | Voorbeelden    | <ul><li>Sluiting dossier</li><li>Overlijden auteur(s)</li></ul>                                                                                                                                                                                                            |
 
-## termijnStartdatumLooptijd
+### termijnStartdatumLooptijd
 | Veld        | Waarde                                                                                                                       |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Startdatum looptijd                                                                                                          |
@@ -319,7 +378,7 @@
 | Toelichting | Als de trigger nog niet heeft plaatsgevonden, dan heeft [termijnStartdatumLooptijd](#termijnstartdatumlooptijd) geen waarde. |
 | Voorbeelden | <ul><li>“1995-04-12” (ISO 8601-1:2019)</li></ul>                                                                             |
 
-## termijnLooptijd
+### termijnLooptijd
 | Veld        | Waarde                                                                                               |
 | ----------- | ---------------------------------------------------------------------------------------------------- |
 | Label       | Looptijd                                                                                             |
@@ -332,7 +391,7 @@
 | Toelichting | Zie de toelichting op [termijnTriggerStartLooptijd](#termijntriggerstartlooptijd).                   |
 | Voorbeelden | <ul><li>“P70Y” (periode van 70 jaar)</li></ul>                                                       |
 
-## termijnEinddatum
+### termijnEinddatum
 | Veld        | Waarde                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Einddatum                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -345,7 +404,13 @@
 | Toelichting | Als de einddatum bekend is, wordt deze meteen ingevuld. In dat geval hoeven de andere attributen geen waarde te hebben. Een einddatum kan afhankelijk zijn van een gebeurtenis die nog plaats moet vinden (de trigger). In dat geval heeft termijnEinddatum nog geen waarde en wordt de einddatum bepaald door termijnTriggerStartLooptijd en termijnLooptijd.                                                                    |
 | Voorbeelden | <ul><li>“1995-04-17” (ISO 8601-1:2019)</li></ul>                                                                                                                                                                                                                                                                                                                                                                                  |
 
-## checksumAlgoritme
+## checksumGegevens
+Deze gegevensgroep bestaat uit de volgende attributen:
+| Gegevensgroep    | Attributen                                                                                                                                  |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| checksumGegevens | <ul><li>[checksumAlgoritme](#checksumalgoritme)</li><li>[checksumWaarde](#checksumwaarde)</li><li>[checksumDatum](#checksumdatum)</li></ul> |
+
+### checksumAlgoritme
 | Veld           | Waarde                                                                                                                                                                                                                                                              |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label          | Algoritme                                                                                                                                                                                                                                                           |
@@ -359,7 +424,7 @@
 | Toelichting    | De vermelding van het checksum-algoritme maakt het mogelijk de checksum van een bestand te herberekenen en te controleren. Idealiter voldoet het algoritme aan de veiligheidseisen van de organisatie. Het Forum Standaardisatie beveelt het gebruik van SHA-2 aan. |
 | Voorbeelden    | <ul><li>Zie de MDTO begrippenlijst ChecksumAlgoritme</li></ul>                                                                                                                                                                                                      |
 
-## checksumWaarde
+### checksumWaarde
 | Veld        | Waarde                                                                                                                                                         |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Waarde                                                                                                                                                         |
@@ -372,7 +437,7 @@
 | Toelichting | Aan de hand van de checksum kan gecontroleerd worden of het bestand beschadigd is.                                                                             |
 | Voorbeelden | <ul><li>“3bb12eda3c298db5de25597f54d924f2e17e78a26ad8953ed8218ee682f0bbbe9021e2f3009d152c911bf1f25ec683a902714166767afbd8e5bd0fb0124ecb8c” (SHA-512)</li></ul> |
 
-## checksumDatum
+### checksumDatum
 | Veld        | Waarde                                                    |
 | ----------- | --------------------------------------------------------- |
 | Label       | Datum checksum                                            |
@@ -385,7 +450,14 @@
 | Toelichting | Geen                                                      |
 | Voorbeelden | <ul><li>“1985-04-13T23:21:18” (ISO 8601-1:2019)</li></ul> |
 
-## fysiekeRaadpleeglocatie
+## raadpleeglocatieGegevens
+Deze gegevensgroep bestaat uit de volgende attributen:
+| Gegevensgroep            | Attributen                                                                                                                      |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| raadpleeglocatieGegevens | <ul><li>[fysiekeRaadpleeglocatie](#fysiekeraadpleeglocatie)</li><li>[onlineRaadpleeglocatie](#onlineraadpleeglocatie)</li></ul> |
+
+
+### fysiekeRaadpleeglocatie
 | Veld        | Waarde                                                                                                                                                                                                                                      |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Fysieke raadpleeglocatie                                                                                                                                                                                                                    |
@@ -398,7 +470,8 @@
 | Regels      | Geen                                                                                                                                                                                                                                        |
 | Toelichting | Een raadpleeglocatie kan aangeduid worden met een organisatie, als daarmee duidelijk is welke fysieke locatie bedoeld wordt. Voor online raadpleeglocatie wordt het attribuut [Online raadpleeglocatie](#onlineraadpleeglocatie)  gebruikt. |
 | Voorbeelden | <ul><li>naam: “Regionaal Archief Tilburg”</li><li>naam: “Nationaal Archief, Den Haag”</li></ul>                                                                                                                                             |
-## onlineRaadpleeglocatie
+
+### onlineRaadpleeglocatie
 | Veld        | Waarde                                                                                                                                                                                                                                                     |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label       | Online raadpleeglocatie                                                                                                                                                                                                                                    |
