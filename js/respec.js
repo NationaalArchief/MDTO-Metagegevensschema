@@ -296,7 +296,6 @@ p:is(.respec-hint,.respec-occurrences){display:block;margin-top:.5em}
         <a href="${o}">Pull requests</a><br>
         <a href="${s}">Dien een melding in </a><br>
         <a href="${r}">Open issues</a><br>
-        <a href="https://github.com/NationaalArchief/MDTO/commits/master/">Revisiehistorie</a></br>
         <a href="https://www.nationaalarchief.nl/archiveren/kennisbank/catalogus-kennisproducten-0">Kennis producten</a><br>     
         <a href="https://www.nationaalarchief.nl/beleven/contactformulier-nationaal-archief">Melding aan het Nationaal Archief</a>
       </dd>`)
