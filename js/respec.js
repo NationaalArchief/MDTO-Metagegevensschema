@@ -266,25 +266,27 @@ p:is(.respec-hint,.respec-occurrences){display:block;margin-top:.5em}
     ${function (e) {
       const t = document.querySelector(".copyright"); if (t) return t.remove(), t; if (e.isUnofficial && e.licenseInfo) return kn`<p class="copyright">
       Copyright &copy;
-      ${e.copyrightStart ? `${e.copyrightStart}-` : ""}${e.publishYear}
       the document editors/authors.
       ${"unlicensed" !== e.licenseInfo.name ? kn`Text is available under the
             <a rel="license" href="${e.licenseInfo.url}"
               >${e.licenseInfo.name}</a
             >; additional terms may apply.`: ""}
     </p>`; return function (e) {
-        return kn`<p class="copyright">
-    <a href="https://www.w3.org/policies/#copyright">Copyright</a>
-    &copy;
-    ${e.copyrightStart ? `${e.copyrightStart}-` : ""}${e.publishYear}
-    ${e.additionalCopyrightHolders ? kn` ${[e.additionalCopyrightHolders]} &amp; ` : ""}
-    <a href="https://www.w3.org/">World Wide Web Consortium</a>.
-    <abbr title="World Wide Web Consortium">W3C</abbr><sup>&reg;</sup>
-    <a href="https://www.w3.org/policies/#Legal_Disclaimer">liability</a>,
-    <a href="https://www.w3.org/policies/#W3C_Trademarks">trademark</a
-    >${function (e) {
-            const { url: t, short: n, name: r } = e; if ("unlicensed" === r) return kn`. <span class="issue">THIS DOCUMENT IS UNLICENSED</span>.`; return kn` and
-    <a rel="license" href="${t}" title="${r}">${n}</a> rules apply.`
+        return kn`
+          <table class="plain-table" width="auto">
+          <tr>
+            <td><img src="images/by-sa.png" width="150px"></td>
+            <td>Dit document valt onder de volgende licentie: <br>
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.en">Creative Commons Attribution 4.0 International Public License</a>
+            </td>
+          </tr>
+          </table>
+        
+        <p class="copyright">
+    ${e.additionalCopyrightHolders ? kn` ${[e.additionalCopyrightHolders]}  ` : ""}
+${function (e) {
+            const { url: t, short: n, name: r } = e; if ("unlicensed" === r) return kn`. <span class="issue">THIS DOCUMENT IS UNLICENSED</span>.`; return kn`
+    `
           }(e.licenseInfo)}
   </p>`}(e)
     }(e)}
@@ -1338,7 +1340,7 @@ img.caniuse-browser{filter:drop-shadow(0 0 .1cm #666);background:0 0}
     />`; document.head.appendChild(t)
                 } const t = document.querySelector("#abstract p:first-of-type"); if (!t) return; const n = t.textContent.replace(/\s+/, " ").trim(), r = document.createElement("meta"); r.name = "description", r.content = n, document.head.appendChild(r)
               }
-            }); const ql = "w3c/seo", Wl = { NOTE: "w3p:NOTE", WD: "w3p:WD", LC: "w3p:LastCall", CR: "w3p:CR", CRD: "w3p:CRD", PR: "w3p:PR", REC: "w3p:REC", RSCND: "w3p:RSCND" }, Ul = new Set([...Os, ...zs, ...Ms, "BG-FINAL", "CG-FINAL", "CRY", "DRY", "draft-finding", "finding"]); function Fl({ name: e, url: t, mailto: n, company: r, companyURL: s }) { const o = { type: "Person", name: e, url: t, "foaf:mbox": n }; return (r || s) && (o.worksFor = { name: r, url: s }), o } function Bl(e) { const { href: t, title: n, href: r } = e, s = { id: t, type: "TechArticle", name: n, url: r }; return e.authors && (s.creator = e.authors.map((e => ({ name: e })))), e.rawDate && (s.publishedDate = e.rawDate), e.isbn && (s.identifier = e.isbn), e.publisher && (s.publisher = { name: e.publisher }), s } var Hl = Object.freeze({ __proto__: null, name: ql, requiresCanonicalLink: Ul, run: async function (e) { if ((e.canonicalURI || Ul.has(e.specStatus)) && e.shortName) { switch (e.canonicalURI) { case "edDraft": if (e.edDraftURI) e.canonicalURI = new URL(e.edDraftURI, document.location.href).href; else { ur("Canonical URI set to edDraft, but no edDraftURI is set in configuration", ql), e.canonicalURI = null } break; case "TR": if (e.latestVersion) e.canonicalURI = e.latestVersion; else { ur("Canonical URI set to TR, but no shortName is set in configuration", ql), e.canonicalURI = null } break; default: e.latestVersion && !e.canonicalURI && (e.canonicalURI = e.latestVersion) }if (e.canonicalURI) { const t = kn`<link rel="canonical" href="${e.canonicalURI}" />`; document.head.appendChild(t) } e.doJsonLd && await async function (e, t) { const n = Wl[e.specStatus], r = ["TechArticle"]; n && r.push(n); const s = { "@context": ["http://schema.org", { "@vocab": "http://schema.org/", "@language": t.documentElement.lang || "en", w3p: "http://www.w3.org/2001/02pd/rec54#", foaf: "http://xmlns.com/foaf/0.1/", datePublished: { "@type": "http://www.w3.org/2001/XMLSchema#date" }, inLanguage: { "@language": null }, isBasedOn: { "@type": "@id" }, license: { "@type": "@id" } }], id: e.canonicalURI || e.thisVersion, type: r, name: document.title, inLanguage: t.documentElement.lang || "en", license: e.licenseInfo?.url, datePublished: e.dashDate, copyrightHolder: { name: "World Wide Web Consortium", url: "https://www.w3.org/" }, discussionUrl: e.issueBase, alternativeHeadline: e.subtitle, isBasedOn: e.prevVersion }; if (e.additionalCopyrightHolders) { const t = Array.isArray(e.additionalCopyrightHolders) ? e.additionalCopyrightHolders : [e.additionalCopyrightHolders]; s.copyrightHolder = [s.copyrightHolder, ...t.map((e => ({ name: e })))] } const o = t.head.querySelector("meta[name=description]"); o && (s.description = o.content); e.editors && (s.editor = e.editors.map(Fl)); e.authors && (s.contributor = e.authors.map(Fl)); const i = [...e.normativeReferences, ...e.informativeReferences], a = await Promise.all(i.map((e => hi(e)))); s.citation = a.filter((e => "object" == typeof e)).map(Bl); const c = t.createElement("script"); c.type = "application/ld+json", c.textContent = JSON.stringify(s, null, 2), t.head.appendChild(c) }(e, document) } } }); var Vl = String.raw`.hljs{--base:#fafafa;--mono-1:#383a42;--mono-2:#686b77;--mono-3:#717277;--hue-1:#0b76c5;--hue-2:#336ae3;--hue-3:#a626a4;--hue-4:#42803c;--hue-5:#ca4706;--hue-5-2:#c91243;--hue-6:#986801;--hue-6-2:#9a6a01}
+            }); const ql = "w3c/seo", Wl = { NOTE: "w3p:NOTE", WD: "w3p:WD", LC: "w3p:LastCall", CR: "w3p:CR", CRD: "w3p:CRD", PR: "w3p:PR", REC: "w3p:REC", RSCND: "w3p:RSCND" }, Ul = new Set([...Os, ...zs, ...Ms, "BG-FINAL", "CG-FINAL", "CRY", "DRY", "draft-finding", "finding"]); function Fl({ name: e, url: t, mailto: n, company: r, companyURL: s }) { const o = { type: "Person", name: e, url: t, "foaf:mbox": n }; return (r || s) && (o.worksFor = { name: r, url: s }), o } function Bl(e) { const { href: t, title: n, href: r } = e, s = { id: t, type: "TechArticle", name: n, url: r }; return e.authors && (s.creator = e.authors.map((e => ({ name: e })))), e.rawDate && (s.publishedDate = e.rawDate), e.isbn && (s.identifier = e.isbn), e.publisher && (s.publisher = { name: e.publisher }), s } var Hl = Object.freeze({ __proto__: null, name: ql, requiresCanonicalLink: Ul, run: async function (e) { if ((e.canonicalURI || Ul.has(e.specStatus)) && e.shortName) { switch (e.canonicalURI) { case "edDraft": if (e.edDraftURI) e.canonicalURI = new URL(e.edDraftURI, document.location.href).href; else { ur("Canonical URI set to edDraft, but no edDraftURI is set in configuration", ql), e.canonicalURI = null } break; case "TR": if (e.latestVersion) e.canonicalURI = e.latestVersion; else { ur("Canonical URI set to TR, but no shortName is set in configuration", ql), e.canonicalURI = null } break; default: e.latestVersion && !e.canonicalURI && (e.canonicalURI = e.latestVersion) }if (e.canonicalURI) { const t = kn`<link rel="canonical" href="${e.canonicalURI}" />`; document.head.appendChild(t) } e.doJsonLd && await async function (e, t) { const n = Wl[e.specStatus], r = ["TechArticle"]; n && r.push(n); const s = { "@context": ["http://schema.org", { "@vocab": "http://schema.org/", "@language": t.documentElement.lang || "en", w3p: "http://www.w3.org/2001/02pd/rec54#", foaf: "http://xmlns.com/foaf/0.1/", datePublished: { "@type": "http://www.w3.org/2001/XMLSchema#date" }, inLanguage: { "@language": null }, isBasedOn: { "@type": "@id" }, license: { "@type": "@id" } }], id: e.canonicalURI || e.thisVersion, type: r, name: document.title, inLanguage: t.documentElement.lang || "en", license: e.licenseInfo?.url, datePublished: e.dashDate, copyrightHolder: { name: "Nationaal Archief", url: "https://www.nationaalarchief.nl/" }, discussionUrl: e.issueBase, alternativeHeadline: e.subtitle, isBasedOn: e.prevVersion }; if (e.additionalCopyrightHolders) { const t = Array.isArray(e.additionalCopyrightHolders) ? e.additionalCopyrightHolders : [e.additionalCopyrightHolders]; s.copyrightHolder = [s.copyrightHolder, ...t.map((e => ({ name: e })))] } const o = t.head.querySelector("meta[name=description]"); o && (s.description = o.content); e.editors && (s.editor = e.editors.map(Fl)); e.authors && (s.contributor = e.authors.map(Fl)); const i = [...e.normativeReferences, ...e.informativeReferences], a = await Promise.all(i.map((e => hi(e)))); s.citation = a.filter((e => "object" == typeof e)).map(Bl); const c = t.createElement("script"); c.type = "application/ld+json", c.textContent = JSON.stringify(s, null, 2), t.head.appendChild(c) }(e, document) } } }); var Vl = String.raw`.hljs{--base:#fafafa;--mono-1:#383a42;--mono-2:#686b77;--mono-3:#717277;--hue-1:#0b76c5;--hue-2:#336ae3;--hue-3:#a626a4;--hue-4:#42803c;--hue-5:#ca4706;--hue-5-2:#c91243;--hue-6:#986801;--hue-6-2:#9a6a01}
 @media (prefers-color-scheme:dark){
 .hljs{--base:#282c34;--mono-1:#abb2bf;--mono-2:#818896;--mono-3:#5c6370;--hue-1:#56b6c2;--hue-2:#61aeee;--hue-3:#c678dd;--hue-4:#98c379;--hue-5:#e06c75;--hue-5-2:#be5046;--hue-6:#d19a66;--hue-6-2:#e6c07b}
 }

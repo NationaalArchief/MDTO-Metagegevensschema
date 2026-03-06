@@ -39,7 +39,7 @@ Deze begrippenlijst wordt gebruikt binnen het attribuut eventType
 | Validatie Handtekening | Controle of de digitale handtekening daadwerkelijk door de desbetreffende actor is gezet.                                                                                                                                              |
 
 ## Waarderingen
-Type begrippenlijst: Gesloten \
+Type begrippenlijst: Gesloten\
 Deze begrippenlijst wordt gebruikt binnen het attribuut waardering.
 
 | Code | Label                | Definitie                                                                                                                         |
@@ -49,7 +49,7 @@ Deze begrippenlijst wordt gebruikt binnen het attribuut waardering.
 | N    | Nader te bepalen     | Er is mogelijk een waardering, maar de aard daarvan is niet vastgelegd als type waardering en niet vastgelegd in de metagegevens. |
 
 ## Relatietypen (betrokkene)
-Type begrippenlijst: Open \ 
+Type begrippenlijst: Open\
 Deze begrippenlijst wordt gebruikt binnen het attribuut betrokkeneTypeRelatie.
 
 | Label          | Definitie                                                                                                                                                                                                                                                                             |
