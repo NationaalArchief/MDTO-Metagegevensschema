@@ -1,13 +1,16 @@
 # Referenties
 
+<span id="nen-iso-23081-1-2017"></span>
 **NEN.** (2017). *NEN-ISO 23081-1: Informatie en documentatie — Records management processes — Metadata for records — Deel 1: Principles*. Delft: NEN.  
 Beschikbaar via: https://www.nen.nl/nen-iso-23081-1-2017-en-247639
 
+<span id="nen-iso-30300-2020"></span>
 **NEN.** (2020). *NEN-ISO 30300:2020 – Informatie en documentatie — Managementsystemen voor documenten — Grondbeginselen en vocabulaire*. Delft: NEN.  
-Beschikbaar via: https://www.nen.nl/
+Beschikbaar via: https://www.nen.nl/nen-iso-30300-2020-en-271394
 
+<span id="nen-iso-25964-1:2011"></span>
 **NEN.** (2011). *NEN-ISO 25964-1:2011 – Informatie en documentatie — Thesauri en interoperabiliteit met andere vocabulaires — Deel 1: Thesauri voor informatieopslag en -terugvinden*. Delft: NEN.  
-Beschikbaar via: https://www.nen.nl/
+Beschikbaar via: https://www.nen.nl/nen-iso-25964-1-2011-en-163228
 
 <span id="iso-8601-2019"></span>
 **ISO.** (2019). *ISO 8601-1:2019 – Date and time — Representations for information interchange — Part 1: Basic rules*. Genève: ISO.  

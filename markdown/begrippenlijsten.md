@@ -2,7 +2,7 @@
 
 ## Aggregatieniveaus
 Type begrippenlijst: Open \
-Deze begrippenlijst wordt gebruikt binnen het attribuut aggregatieniveau
+Deze begrippenlijst wordt gebruikt binnen het attribuut [aggregatieniveau](#aggregatieniveau)
 
 | Label       | Definitie                                                                                                                                                                                                                                        |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -14,7 +14,7 @@ Deze begrippenlijst wordt gebruikt binnen het attribuut aggregatieniveau
 
 ## EventTypeLijst
 Type begrippenlijst: Open \
-Deze begrippenlijst wordt gebruikt binnen het attribuut eventType
+Deze begrippenlijst wordt gebruikt binnen het attribuut [eventType](#eventtype)
 
 | Label                  | Definitie                                                                                                                                                                                                                              |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -40,7 +40,7 @@ Deze begrippenlijst wordt gebruikt binnen het attribuut eventType
 
 ## Waarderingen
 Type begrippenlijst: Gesloten\
-Deze begrippenlijst wordt gebruikt binnen het attribuut waardering.
+Deze begrippenlijst wordt gebruikt binnen het attribuut [waardering](#waardering).
 
 | Code | Label                | Definitie                                                                                                                         |
 | ---- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,7 +50,7 @@ Deze begrippenlijst wordt gebruikt binnen het attribuut waardering.
 
 ## Relatietypen (betrokkene)
 Type begrippenlijst: Open\
-Deze begrippenlijst wordt gebruikt binnen het attribuut betrokkeneTypeRelatie.
+Deze begrippenlijst wordt gebruikt binnen het attribuut [betrokkeneTypeRelatie](#betrokkenetyperelatie).
 
 | Label          | Definitie                                                                                                                                                                                                                                                                             |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -61,7 +61,7 @@ Deze begrippenlijst wordt gebruikt binnen het attribuut betrokkeneTypeRelatie.
 
 ## Relatietypen (informatieobject)
 Type begrippenlijst: Open \
-Deze begrippenlijst wordt gebruikt binnen het attribuut gerelateerdInformatieobjectTypeRelatie.
+Deze begrippenlijst wordt gebruikt binnen het attribuut [gerelateerdInformatieobjectTypeRelatie](#gerelateerdinformatieobjecttyperelatie).
 
 | Label                 | Betekenis                                                                                                                                     | Overeenkomstig Dublin Core label |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
@@ -76,7 +76,7 @@ Deze begrippenlijst wordt gebruikt binnen het attribuut gerelateerdInformatieobj
 
 ## BeperkingGebruikTypeLijst
 Type begrippenlijst: Open \
-Deze begrippenlijst wordt gebruikt binnen het attribuut beperkingGebruikType. 
+Deze begrippenlijst wordt gebruikt binnen het attribuut [beperkingGebruikType](#beperkinggebruiktype). 
 
 | Label            | Definitie                                                                                                                                                                  |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -86,7 +86,7 @@ Deze begrippenlijst wordt gebruikt binnen het attribuut beperkingGebruikType.
 
 ## ChecksumAlgoritme
 Type begrippenlijst: Open \
-Deze begrippenlijst wordt gebruikt binnen het attribuut checksumAlgoritme.
+Deze begrippenlijst wordt gebruikt binnen het attribuut [checksumAlgoritme](#checksumalgoritme).
 
 | Label   | Definitie                                                                                                                                                                            |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
