@@ -1,3 +1,0 @@
-<div style="background-color: #f0f0f0; padding: 15px; border-radius: 5px;">
-    <b>MDTO is op github onder constructie in aanloop naar besluitvorming in het OBDO. Dit werk is NOG NIET COMPLEET.</b> Het volledig aanbieden van MDTO via github wordt verwacht vanaf eind Q2 2026. Maak tot die tijd gebruik van de versie zoals die op <a href="https://https://www.nationaalarchief.nl/archiveren/mdto">de website van Nationaal Archief</a> staat.
-</div>
