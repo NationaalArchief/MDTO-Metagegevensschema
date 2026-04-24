@@ -1,5 +1,19 @@
 # Gegevensgroepen
 
+De gegevensgroepen binnen MDTO zijn:
+
+- [identificatieGegevens](#identificatiegegevens)
+- [verwijzingsGegevens](#verwijzingsgegevens)
+- [begripGegevens](#begripgegevens)
+- [dekkingInTijdGegevens](#dekkingintijdgegevens)
+- [eventGegevens](#eventgegevens)
+- [gerelateerdInformatieobjectGegevens](#gerelateerdinformatieobjectgegevens)
+- [betrokkeneGegevens](#betrokkenegegevens)
+- [beperkingGebruikGegevens](#beperkinggebruikgegevens)
+- [termijnGegevens](#termijngegevens)
+- [checksumGegevens](#checksumgegevens)
+- [raadpleeglocatieGegevens](#raadpleeglocatiegegevens)
+
 ## identificatieGegevens
 Deze gegevensgroep bestaat uit de volgende attributen:
 | Gegevensgroep         | Attributen                                                                                                      |
