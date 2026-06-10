@@ -1,10 +1,10 @@
->**MDTO is op github in aanbouw in aanloop naar besluitvorming in het OBDO**. **Dit werk is NOG NIET COMPLEET.** Het volledig aanbieden van MDTO via github wordt verwacht vanaf eind Q2 2026. Maak tot die tijd gebruik van de versie zoals die op [nationaalarchief.nl](https://www.nationaalarchief.nl/archiveren/mdto) staat.
-
-# MDTO
+|     |
+| --- |
+<div><h2>MDTO</h2></div>
 
 Deze repository vormt onderdeel van MDTO (Metagegevens voor Duurzaam Toegankelijke Overheidsinformatie). MDTO is een Nederlandse standaard voor het vastleggen van metagegevens bij overheidsinformatie, zodat deze vindbaar, beschikbaar, leesbaar, interpreteerbaar, betrouwbaar en toekomstbestendig is voor iedereen die daartoe gerechtigd is.
 
-## Welke onderdelen van MDTO zijn normerend?
+<div><h4><small>Welke onderdelen van MDTO zijn normerend?</small></h4></div>
 
 <details><summary><b>Klik hier om te zien Welke onderdelen van MDTO normerend zijn.</b></summary>
 <br>
@@ -31,7 +31,7 @@ Ten slotte zijn er, ter informatie, een aantal niet-normerende bijlages:
   https://nationaalarchief.github.io/MDTO-Veelgestelde-vragen/
 </details>
 
-## Kennisproducten Nationaal Archief
+<div><h5><small>Kennisproducten Nationaal Archief</small></h5></div>
 <details><summary><b>Klik hier voor informatie over kennisproducten van het Nationaal Archief.</b></summary>
 <br>
 De norm MDTO is één van de kennisproducten van het Nationaal Archief die overheidsorganisaties in staat stellen om hun informatie duurzaam toegankelijk te maken en houden. Om meer te weten komen over de verschillende kennisproducten en de onderwerpen waarvoor zij oplossingen bieden, ga naar: https://www.nationaalarchief.nl/archiveren/kennisbank/catalogus-kennisproducten-0
