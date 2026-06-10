@@ -1,5 +1,3 @@
-|     |
-| --- |
 <div><h2>MDTO</h2></div>
 
 Deze repository vormt onderdeel van MDTO (Metagegevens voor Duurzaam Toegankelijke Overheidsinformatie). MDTO is een Nederlandse standaard voor het vastleggen van metagegevens bij overheidsinformatie, zodat deze vindbaar, beschikbaar, leesbaar, interpreteerbaar, betrouwbaar en toekomstbestendig is voor iedereen die daartoe gerechtigd is.
