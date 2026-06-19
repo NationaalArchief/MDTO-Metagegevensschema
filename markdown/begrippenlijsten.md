@@ -1,5 +1,15 @@
 # Begrippenlijsten
 
+De gegevensgroepen binnen MDTO zijn:
+
+- [Aggregatieniveaus](#aggregatieniveaus)
+- [EventTypeLijst](#eventtypelijst)
+- [Waarderingen](#waarderingen)
+- [Relatietypen (betrokkene)](#relatietypen-betrokkene)
+- [Relatietypen (informatieobject)](#relatietypen-informatieobject)
+- [BeperkingGebruikTypeLijst](#beperkinggebruiktypelijst)
+- [ChecksumAlgoritme](#checksumalgoritme-0)
+
 ## Aggregatieniveaus
 Type begrippenlijst: Open \
 Deze begrippenlijst wordt gebruikt binnen het attribuut [aggregatieniveau](#aggregatieniveau)
