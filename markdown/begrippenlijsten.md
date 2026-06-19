@@ -1,6 +1,6 @@
 # Begrippenlijsten
 
-De gegevensgroepen binnen MDTO zijn:
+De begrippenlijsten binnen MDTO zijn:
 
 - [Aggregatieniveaus](#aggregatieniveaus)
 - [EventTypeLijst](#eventtypelijst)
