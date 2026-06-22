@@ -14,11 +14,6 @@
 
 ---
 
-**Revisiehistorie**  
-[Bekijk alle wijzigingen op GitHub](https://github.com/NationaalArchief/MDTO-XSD/commits/master)
-
----
-
 **Auteur**  
 [Nationaal Archief](https://www.nationaalarchief.nl/)<br>
 Prins Willem-Alexanderhof 20 
